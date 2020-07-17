@@ -42,7 +42,9 @@ class AdminServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', $this->vendorName);
         // $this->loadViewsFrom(__DIR__.'/../resources/views', $this->vendorName);
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+         $this->loadRoutesFrom(__DIR__.'/../routes/view.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
