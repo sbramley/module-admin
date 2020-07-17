@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TMS\\IDP\\": "src/"
+            "TMS\\Admin\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -25,7 +25,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "TMS\\IDP\\Tests\\": "tests"
+            "TMS\\Admin\\Tests\\": "tests"
         }
     },
     "suggest": {
